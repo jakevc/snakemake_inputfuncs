@@ -13,8 +13,8 @@ conda create -n smk_example snakemake
 source activate smk_example
 
 # clone this repo
-git clone http:github.com/jakevc/snakemake_example 
-cd snakemake_example
+git clone git@github.com:jakevc/snakemake_inputfuncs.git
+cd snakemake_inputfuncs
 
 # run the workflow
 snakemake
