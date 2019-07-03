@@ -10,8 +10,10 @@ rule all:
 
 rule first:
     input:
+        # input function returns the list of fq files for a given sample using sample_dict
         lambda wildcards: sample_dict[wildcards.sample]
     output:
         "data/{sample}.txt"
     shell:
+        # concat the txt in each fq file in the list        
         "cat {input} > {output}"
